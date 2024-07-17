@@ -14,7 +14,6 @@
         }
     ],
     "env": {
-        "REACT_APP_BASENAME": "Medilab",
-        "REACT_APP_GAID": "UA-115105611-1"
+        "REACT_APP_BASENAME": "Medilab"
     }
 }
