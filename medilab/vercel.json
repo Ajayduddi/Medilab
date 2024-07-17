@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/static-build",
+            "config": { "distDir": "build" }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ],
+    "env": {
+        "REACT_APP_BASENAME": "Medilab",
+        "REACT_APP_GAID": "UA-115105611-1"
+    },
+    "rewrites": [
+        {
+            "source": "/demo/shards-dashboard-lite-react/(.*)",
+            "destination": "/$1"
+        }
+    ]
+}
