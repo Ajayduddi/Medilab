@@ -20,7 +20,7 @@ export default function Login() {
   const [users, setUsers] = useState(employeeList);
   const pass1 = TestsData.getpassData();
   const login = () => {
-    if (email === "admin@gmail.com" && password === pass1[pass1.length - 1]) {
+    if (email === "admin@gmail.com" && password === 'admin123') {
       localStorage.setItem("isAuthenticated", 1);
       setIsAuthenticated(localStorage.setItem("isAuthenticated", 1));
       setUser(localStorage.setItem("user", "admin"));
